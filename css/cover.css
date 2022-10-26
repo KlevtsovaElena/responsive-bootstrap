@@ -1,0 +1,179 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+h1{
+    font-size: calc(2rem + 1.5vw);
+} 
+h4{
+    margin: 10px 0px 20px;
+    font-weight: bold;
+}
+#main-page{
+    padding-bottom: 1%;
+    background-image: url('../img/6.jpg');
+}
+#contact-page{
+    background:#fafafa;
+}
+#coffee{background-color: #fafafa;
+    padding: 1rem 4rem 1rem;}
+#our-foto{background-color: #fafafa;}
+
+.jc-right{
+    justify-content: right;
+}
+.jc-left{
+    justify-content: left;
+}
+.ai-center{
+    align-items: center; 
+}
+.ta-center{
+    text-align: center;
+}
+.ta-left{
+    text-align: left;
+}
+.f-wrap{
+    flex-wrap: wrap;
+}
+.cover-container-ch{
+    background-size: cover;
+    background-position: center center;
+    transition: all 0.5s;
+}
+.nav-ch{
+    position: fixed;
+    z-index: 4;
+    padding: 3px;
+    background: linear-gradient(to right, #261817, black);
+    opacity: 0.8;
+}
+.nav-link-ch {
+    transition: all 0.5s;
+    color: white;
+}
+.nav-link-ch:hover{
+    color:white;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.btn:hover, .btn-send:hover{
+    animation: wobble-hor-bottom 1s;
+}
+.carouselExampleControls-ch{
+   width: 90%;
+}
+.carousel-item-ch{
+    transition: all 1s;
+}
+.card-ch{
+    width: 352px;
+    margin: 3px;
+}
+.card-body-ch{
+    color: black;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #261817;
+    border-color: burlywood;
+}
+.form-field{
+    height: 150px;
+    resize: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: #898989;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+}
+.footer-end{
+    padding: 10px;
+    height: 40px;
+    background-color: #261817;
+}
+.contact-f a{
+    text-decoration: none;
+    color: black;
+}
+.container-f{
+    width: 60%;
+    background: linear-gradient(0deg, #EFEBE5, #EFEBE5);
+    color: black;
+    padding: 15px;  
+}
+.contact-f{
+    width: 40%;
+    color: black;
+    padding: 15px;
+}
+.c-contact{
+    width: 1200px;
+    margin: 0px 10px 10px;
+}
+.r-input{
+    padding: 10px;
+}
+.inputblock{
+    color: #898989;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    height: 60px;
+    display: block;
+    padding: 10px;
+}
+.r-contact{
+    padding-top: 15px; 
+}
+
+
+@keyframes wobble-hor-bottom {
+    0%,
+    100% {transform: translateX(0%);
+          transform-origin: 50% 50%;}
+    15% {transform: translateX(-30px) rotate(-4deg);}
+    30% {transform: translateX(15px) rotate(4deg);}
+    45% {transform: translateX(-15px) rotate(-3.6deg);}
+    60% {transform: translateX(9px) rotate(2.4deg);}
+    75% {transform: translateX(-6px) rotate(-1.2deg);}
+  }
+  @keyframes color-change-2x {
+    0% {background: #261817;}
+    50% {background: #CC9966;}
+    100% {background: #261817;}
+  }
+
+@media(max-width: 1220px){
+    .card-ch{
+        width: 300px;
+    }
+}
+
+@media(max-width: 880px){
+    .card-ch{
+        width: 250px;
+    }
+    .c-contact{
+        flex-direction: column;
+    }
+    .container-f{
+        width: 80%;
+    }
+    .contact-f{
+        width: 80%;
+    }
+    #coffee{
+        padding: 1rem;
+    }
+}
